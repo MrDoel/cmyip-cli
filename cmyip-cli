@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+#######################
+#  Coded by Mr.Doel   #
+#  Malang Cyber Crew  #
+#  doel@mc-crew.or.id #
+#######################
+
+import re,urllib2
+from BeautifulSoup import  BeautifulSoup
+
+html=urllib2.urlopen("http://cmyip.com/")
+soup=BeautifulSoup(html)
+
+for i in soup.find('h1', attrs={'class': 'page-title'}):
+    print i
+
+for j in soup.findAll('h3', attrs={'class': 'page-title'}):
+    print j.text
+
