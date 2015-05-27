@@ -2,11 +2,12 @@
 ## Author : Mr.Doel
 ###CmyIP Via Command Line Interface
 
-###Download :
+####Download :
 
 $ git clone https://github.com/MrDoel/cmyip-cli.git
 
-usage : 
+usage :
+
 $ cd cmyip-cli
 
 $ ./cmyip-cli
