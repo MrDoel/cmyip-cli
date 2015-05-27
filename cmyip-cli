@@ -10,10 +10,10 @@ from BeautifulSoup import  BeautifulSoup
 
 html=urllib2.urlopen("http://cmyip.com/")
 soup=BeautifulSoup(html)
-
-for i in soup.find('h1', attrs={'class': 'page-title'}):
+clss='page-title'
+for i in soup.find('h1', attrs={'class': clss}):
     print i
 
-for j in soup.findAll('h3', attrs={'class': 'page-title'}):
+for j in soup.findAll('h3', attrs={'class': clss}):
     print j.text
 
