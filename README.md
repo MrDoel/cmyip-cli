@@ -2,7 +2,10 @@
 #### Author : Mr.Doel
 ###CmyIP Via Command Line Interface
 
-####Download :
+####Install Dependency & Download :
+$ sudo apt-get install pip
+
+$ sudo pip install beautifulsoup4
 
 $ git clone https://github.com/MrDoel/cmyip-cli.git
 
