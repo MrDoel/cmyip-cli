@@ -4,7 +4,7 @@
 
 ###Download :
 
-git clone https://github.com/MrDoel/cmyip-cli.git
+$ git clone https://github.com/MrDoel/cmyip-cli.git
 
 usage : 
 $ cd cmyip-cli
