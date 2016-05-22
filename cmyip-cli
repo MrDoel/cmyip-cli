@@ -5,15 +5,14 @@
 #  doel@mc-crew.or.id #
 #######################
 
-import re,urllib2
+import urllib2
 from BeautifulSoup import  BeautifulSoup
 
 html=urllib2.urlopen("http://cmyip.com/")
 soup=BeautifulSoup(html)
 clss='page-title'
-for i in soup.find('h1', attrs={'class': clss}):
-    print i
+for ip in soup.findAll('h1', attrs={'class': 'page-title'}):
+    print ''.join(ip.findAll(text=True)).replace('Hide IP Address','').rstrip()
 
-for j in soup.findAll('h3', attrs={'class': clss}):
-    print j.text
-
+for detail in soup.findAll('h3', attrs={'class': clss}):
+    print ''.join(detail.findAll(text=True)).replace('Whois','').replace('Detected User Agent','').replace('Weather','').replace('Hotel','').replace('Speed Test','').rstrip()
